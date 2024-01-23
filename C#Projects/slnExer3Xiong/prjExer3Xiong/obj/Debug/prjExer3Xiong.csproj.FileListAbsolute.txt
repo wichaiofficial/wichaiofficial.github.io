@@ -1,0 +1,10 @@
+D:\Wichai School\IntroC#\slnExer3Xiong\prjExer3Xiong\obj\Debug\prjExer3Xiong.csproj.AssemblyReference.cache
+D:\Wichai School\IntroC#\slnExer3Xiong\prjExer3Xiong\obj\Debug\prjExer3Xiong.frmExer3Form.resources
+D:\Wichai School\IntroC#\slnExer3Xiong\prjExer3Xiong\obj\Debug\prjExer3Xiong.Properties.Resources.resources
+D:\Wichai School\IntroC#\slnExer3Xiong\prjExer3Xiong\obj\Debug\prjExer3Xiong.csproj.GenerateResource.cache
+D:\Wichai School\IntroC#\slnExer3Xiong\prjExer3Xiong\obj\Debug\prjExer3Xiong.csproj.CoreCompileInputs.cache
+D:\Wichai School\IntroC#\slnExer3Xiong\prjExer3Xiong\bin\Debug\prjExer3Xiong.exe.config
+D:\Wichai School\IntroC#\slnExer3Xiong\prjExer3Xiong\bin\Debug\prjExer3Xiong.exe
+D:\Wichai School\IntroC#\slnExer3Xiong\prjExer3Xiong\bin\Debug\prjExer3Xiong.pdb
+D:\Wichai School\IntroC#\slnExer3Xiong\prjExer3Xiong\obj\Debug\prjExer3Xiong.exe
+D:\Wichai School\IntroC#\slnExer3Xiong\prjExer3Xiong\obj\Debug\prjExer3Xiong.pdb

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prjStateCapitals", "prjStateCapitals\prjStateCapitals.csproj", "{6DE99F70-EC55-4374-AB1B-ABA566DDDBA8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6DE99F70-EC55-4374-AB1B-ABA566DDDBA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DE99F70-EC55-4374-AB1B-ABA566DDDBA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DE99F70-EC55-4374-AB1B-ABA566DDDBA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DE99F70-EC55-4374-AB1B-ABA566DDDBA8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8D27C2DF-94DD-4D05-8FDD-61E198F4F894}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,10 @@
+C:\Users\wicha\source\repos\slnExer1Xiong\prjExer1Xiong\bin\Debug\prjExer1Xiong.exe.config
+C:\Users\wicha\source\repos\slnExer1Xiong\prjExer1Xiong\bin\Debug\prjExer1Xiong.exe
+C:\Users\wicha\source\repos\slnExer1Xiong\prjExer1Xiong\bin\Debug\prjExer1Xiong.pdb
+C:\Users\wicha\source\repos\slnExer1Xiong\prjExer1Xiong\obj\Debug\prjExer1Xiong.csproj.AssemblyReference.cache
+C:\Users\wicha\source\repos\slnExer1Xiong\prjExer1Xiong\obj\Debug\prjExer1Xiong.Properties.Resources.resources
+C:\Users\wicha\source\repos\slnExer1Xiong\prjExer1Xiong\obj\Debug\prjExer1Xiong.csproj.GenerateResource.cache
+C:\Users\wicha\source\repos\slnExer1Xiong\prjExer1Xiong\obj\Debug\prjExer1Xiong.csproj.CoreCompileInputs.cache
+C:\Users\wicha\source\repos\slnExer1Xiong\prjExer1Xiong\obj\Debug\prjExer1Xiong.exe
+C:\Users\wicha\source\repos\slnExer1Xiong\prjExer1Xiong\obj\Debug\prjExer1Xiong.pdb
+C:\Users\wicha\source\repos\slnExer1Xiong\prjExer1Xiong\obj\Debug\prjExer1Xiong.frmExer1form.resources

@@ -1,0 +1,10 @@
+D:\Wichai School\IntroC#\slnInchesToCentimeters\prjInchesToCentimeters\bin\Debug\prjInchesToCentimeters.exe.config
+D:\Wichai School\IntroC#\slnInchesToCentimeters\prjInchesToCentimeters\bin\Debug\prjInchesToCentimeters.exe
+D:\Wichai School\IntroC#\slnInchesToCentimeters\prjInchesToCentimeters\bin\Debug\prjInchesToCentimeters.pdb
+D:\Wichai School\IntroC#\slnInchesToCentimeters\prjInchesToCentimeters\obj\Debug\prjInchesToCentimeters.csproj.AssemblyReference.cache
+D:\Wichai School\IntroC#\slnInchesToCentimeters\prjInchesToCentimeters\obj\Debug\prjInchesToCentimeters.frmInchesToCentimeters.resources
+D:\Wichai School\IntroC#\slnInchesToCentimeters\prjInchesToCentimeters\obj\Debug\prjInchesToCentimeters.Properties.Resources.resources
+D:\Wichai School\IntroC#\slnInchesToCentimeters\prjInchesToCentimeters\obj\Debug\prjInchesToCentimeters.csproj.GenerateResource.cache
+D:\Wichai School\IntroC#\slnInchesToCentimeters\prjInchesToCentimeters\obj\Debug\prjInchesToCentimeters.csproj.CoreCompileInputs.cache
+D:\Wichai School\IntroC#\slnInchesToCentimeters\prjInchesToCentimeters\obj\Debug\prjInchesToCentimeters.exe
+D:\Wichai School\IntroC#\slnInchesToCentimeters\prjInchesToCentimeters\obj\Debug\prjInchesToCentimeters.pdb

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prjSalesTax", "prjSalesTax\prjSalesTax.csproj", "{A2995A34-CBAC-4BAF-A152-CE9021A920BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2995A34-CBAC-4BAF-A152-CE9021A920BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2995A34-CBAC-4BAF-A152-CE9021A920BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2995A34-CBAC-4BAF-A152-CE9021A920BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2995A34-CBAC-4BAF-A152-CE9021A920BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {53CD4127-6B45-4127-845A-50E8509E9BB1}
+	EndGlobalSection
+EndGlobal

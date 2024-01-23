@@ -1,0 +1,147 @@
+#wrapper {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 100px;
+}
+
+body {
+    font-family: arial;
+    font-size: 1em;
+    color: gray;
+    background-color: whitesmoke;
+}
+
+h1, h2, h3, h4 {
+        color: rgb(0, 113, 188);
+}
+
+footer {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 1em;
+    background-color: whitesmoke;
+    display: block;
+}
+
+p {
+    font-size: .75em;
+}
+
+.head {
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 50px;
+    background-color: whitesmoke;
+}
+
+.smallimage {
+    float: left;
+    margin-right: 50px;
+}
+
+.navigation {
+    width:100%;
+    height: auto;
+    padding:10px 0px;
+    background-color:rgb(0, 113, 188);
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.navigation a {
+    margin: 0px 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color:white;
+}
+
+a:visited {
+    text-decoration: none;
+    color:lightgray;
+}
+
+a:hover {
+    text-decoration: underline;
+    color:lightgray;
+}
+
+.agents {
+    padding: 15px;
+    font-size: 1em;
+    display:inline-block;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+#anchors {
+    margin: 50px 0px;
+}
+
+#anchors a {
+    color: black;
+    text-align: center;
+}
+
+ul {
+    padding-left: 0px;
+    margin-left: 0px;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    padding-right: 10px;
+}
+
+.listings {
+    font-size: 1em;
+    display:inline-block;
+    line-height: 3px;
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.listings h4 {
+    font-size: .75em;
+    font-style: italic;
+}
+
+.listingimg {
+    float: left;
+    margin-right: 20px;
+    width: 220px; 
+    height: 150px;
+}
+
+
+figcaption {
+    background-color: rgb(255, 253, 118);
+    color: rgb(0, 0, 0);
+    font: smaller sans-serif;
+    font-weight: bold;
+    padding: 3px;
+}
+
+
+.office {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.office h2 {
+    font-size: 1.2em;
+}
+
+.office p {
+    color: black;
+    font-size: .9em;
+}
+

@@ -1,0 +1,10 @@
+D:\Wichai School\IntroC#\slnComparePopulation\prjComparePopulation\bin\Debug\prjComparePopulation.exe.config
+D:\Wichai School\IntroC#\slnComparePopulation\prjComparePopulation\bin\Debug\prjComparePopulation.exe
+D:\Wichai School\IntroC#\slnComparePopulation\prjComparePopulation\bin\Debug\prjComparePopulation.pdb
+D:\Wichai School\IntroC#\slnComparePopulation\prjComparePopulation\obj\Debug\prjComparePopulation.csproj.AssemblyReference.cache
+D:\Wichai School\IntroC#\slnComparePopulation\prjComparePopulation\obj\Debug\prjComparePopulation.frmComparePopulation.resources
+D:\Wichai School\IntroC#\slnComparePopulation\prjComparePopulation\obj\Debug\prjComparePopulation.Properties.Resources.resources
+D:\Wichai School\IntroC#\slnComparePopulation\prjComparePopulation\obj\Debug\prjComparePopulation.csproj.GenerateResource.cache
+D:\Wichai School\IntroC#\slnComparePopulation\prjComparePopulation\obj\Debug\prjComparePopulation.csproj.CoreCompileInputs.cache
+D:\Wichai School\IntroC#\slnComparePopulation\prjComparePopulation\obj\Debug\prjComparePopulation.exe
+D:\Wichai School\IntroC#\slnComparePopulation\prjComparePopulation\obj\Debug\prjComparePopulation.pdb

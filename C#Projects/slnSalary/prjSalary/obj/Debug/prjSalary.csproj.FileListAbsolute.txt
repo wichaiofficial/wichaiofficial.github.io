@@ -1,0 +1,10 @@
+D:\Wichai School\IntroC#\slnSalary\prjSalary\bin\Debug\prjSalary.exe.config
+D:\Wichai School\IntroC#\slnSalary\prjSalary\bin\Debug\prjSalary.exe
+D:\Wichai School\IntroC#\slnSalary\prjSalary\bin\Debug\prjSalary.pdb
+D:\Wichai School\IntroC#\slnSalary\prjSalary\obj\Debug\prjSalary.csproj.AssemblyReference.cache
+D:\Wichai School\IntroC#\slnSalary\prjSalary\obj\Debug\prjSalary.frmSalary.resources
+D:\Wichai School\IntroC#\slnSalary\prjSalary\obj\Debug\prjSalary.Properties.Resources.resources
+D:\Wichai School\IntroC#\slnSalary\prjSalary\obj\Debug\prjSalary.csproj.GenerateResource.cache
+D:\Wichai School\IntroC#\slnSalary\prjSalary\obj\Debug\prjSalary.csproj.CoreCompileInputs.cache
+D:\Wichai School\IntroC#\slnSalary\prjSalary\obj\Debug\prjSalary.exe
+D:\Wichai School\IntroC#\slnSalary\prjSalary\obj\Debug\prjSalary.pdb

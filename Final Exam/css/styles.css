@@ -1,0 +1,119 @@
+#wrapper {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    background-color: rgb(255, 244, 241);
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    color: #492020;
+    margin: 0%;
+    background-color: rgb(255, 244, 241);
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 1.25em;
+}
+h4 {
+    letter-spacing: .115em;
+    font-size: 1.15em;  
+}
+
+footer {
+    background-color: #492020;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+
+address p {
+    line-height: 1.5%;
+    letter-spacing: .025em;
+}
+
+.home {
+    background-image: url(../img/boatnoodles.jpg);
+}
+
+.about {
+    background-image: url(../img/kaopoon.jpg);
+}
+
+.gallery {
+    background-image: url(../img/phobanner.jpg);
+}
+
+.contact {
+    background-image: url(../img/vermicellibanner.jpg);
+}
+
+.menu {
+    background-image: url(../img/ramenbanner.jpg); 
+}
+
+.main {
+    padding-top: 35px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.info {
+    padding-top: 35px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.location {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 1.5%;
+}
+
+.lunch {
+    text-align: left;
+}
+
+.anchors a {
+    color: #492020;
+    font-size: 1em;
+}
+
+.anchors a:link {
+    color: #492020;
+}
+
+.anchors a:visited {
+    color: #492020;
+}
+
+ul{
+    padding-left: 0px;
+    margin-left: 0px;
+}
+li {
+     display: inline;
+    padding-right: 25px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 2em;
+}
+
+a:link {
+    color:white;
+}
+
+a:visited {
+    text-decoration: none;
+    color:white;
+}
+
+a:hover {
+    text-decoration: underline;
+    color:#492020;
+}

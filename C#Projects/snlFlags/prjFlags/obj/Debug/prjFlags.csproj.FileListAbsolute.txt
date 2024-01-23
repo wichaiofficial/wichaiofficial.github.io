@@ -1,0 +1,10 @@
+D:\Wichai School\IntroC#\snlFlags\prjFlags\bin\Debug\prjFlags.exe.config
+D:\Wichai School\IntroC#\snlFlags\prjFlags\bin\Debug\prjFlags.exe
+D:\Wichai School\IntroC#\snlFlags\prjFlags\bin\Debug\prjFlags.pdb
+D:\Wichai School\IntroC#\snlFlags\prjFlags\obj\Debug\prjFlags.csproj.AssemblyReference.cache
+D:\Wichai School\IntroC#\snlFlags\prjFlags\obj\Debug\prjFlags.frmFlags.resources
+D:\Wichai School\IntroC#\snlFlags\prjFlags\obj\Debug\prjFlags.Properties.Resources.resources
+D:\Wichai School\IntroC#\snlFlags\prjFlags\obj\Debug\prjFlags.csproj.GenerateResource.cache
+D:\Wichai School\IntroC#\snlFlags\prjFlags\obj\Debug\prjFlags.csproj.CoreCompileInputs.cache
+D:\Wichai School\IntroC#\snlFlags\prjFlags\obj\Debug\prjFlags.exe
+D:\Wichai School\IntroC#\snlFlags\prjFlags\obj\Debug\prjFlags.pdb

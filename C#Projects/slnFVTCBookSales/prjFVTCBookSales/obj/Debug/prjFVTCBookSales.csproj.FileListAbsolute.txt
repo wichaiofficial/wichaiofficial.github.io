@@ -1,0 +1,10 @@
+D:\Wichai School\IntroC#\slnFVTCBookSales\prjFVTCBookSales\bin\Debug\prjFVTCBookSales.exe.config
+D:\Wichai School\IntroC#\slnFVTCBookSales\prjFVTCBookSales\bin\Debug\prjFVTCBookSales.exe
+D:\Wichai School\IntroC#\slnFVTCBookSales\prjFVTCBookSales\bin\Debug\prjFVTCBookSales.pdb
+D:\Wichai School\IntroC#\slnFVTCBookSales\prjFVTCBookSales\obj\Debug\prjFVTCBookSales.csproj.AssemblyReference.cache
+D:\Wichai School\IntroC#\slnFVTCBookSales\prjFVTCBookSales\obj\Debug\prjFVTCBookSales.frmFVTCBookSales.resources
+D:\Wichai School\IntroC#\slnFVTCBookSales\prjFVTCBookSales\obj\Debug\prjFVTCBookSales.Properties.Resources.resources
+D:\Wichai School\IntroC#\slnFVTCBookSales\prjFVTCBookSales\obj\Debug\prjFVTCBookSales.csproj.GenerateResource.cache
+D:\Wichai School\IntroC#\slnFVTCBookSales\prjFVTCBookSales\obj\Debug\prjFVTCBookSales.csproj.CoreCompileInputs.cache
+D:\Wichai School\IntroC#\slnFVTCBookSales\prjFVTCBookSales\obj\Debug\prjFVTCBookSales.exe
+D:\Wichai School\IntroC#\slnFVTCBookSales\prjFVTCBookSales\obj\Debug\prjFVTCBookSales.pdb

@@ -1,0 +1,10 @@
+D:\Wichai School\IntroC#\slnLooping\prjLooping\bin\Debug\prjLooping.exe.config
+D:\Wichai School\IntroC#\slnLooping\prjLooping\bin\Debug\prjLooping.exe
+D:\Wichai School\IntroC#\slnLooping\prjLooping\bin\Debug\prjLooping.pdb
+D:\Wichai School\IntroC#\slnLooping\prjLooping\obj\Debug\prjLooping.csproj.AssemblyReference.cache
+D:\Wichai School\IntroC#\slnLooping\prjLooping\obj\Debug\prjLooping.frmLooping.resources
+D:\Wichai School\IntroC#\slnLooping\prjLooping\obj\Debug\prjLooping.Properties.Resources.resources
+D:\Wichai School\IntroC#\slnLooping\prjLooping\obj\Debug\prjLooping.csproj.GenerateResource.cache
+D:\Wichai School\IntroC#\slnLooping\prjLooping\obj\Debug\prjLooping.csproj.CoreCompileInputs.cache
+D:\Wichai School\IntroC#\slnLooping\prjLooping\obj\Debug\prjLooping.exe
+D:\Wichai School\IntroC#\slnLooping\prjLooping\obj\Debug\prjLooping.pdb

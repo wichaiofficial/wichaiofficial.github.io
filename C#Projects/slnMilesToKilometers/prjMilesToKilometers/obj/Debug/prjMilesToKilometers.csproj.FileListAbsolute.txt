@@ -1,0 +1,10 @@
+D:\Wichai School\IntroC#\slnMilesToKilometers\prjMilesToKilometers\bin\Debug\prjMilesToKilometers.exe.config
+D:\Wichai School\IntroC#\slnMilesToKilometers\prjMilesToKilometers\bin\Debug\prjMilesToKilometers.exe
+D:\Wichai School\IntroC#\slnMilesToKilometers\prjMilesToKilometers\bin\Debug\prjMilesToKilometers.pdb
+D:\Wichai School\IntroC#\slnMilesToKilometers\prjMilesToKilometers\obj\Debug\prjMilesToKilometers.csproj.AssemblyReference.cache
+D:\Wichai School\IntroC#\slnMilesToKilometers\prjMilesToKilometers\obj\Debug\prjMilesToKilometers.frmMilesToKilometers.resources
+D:\Wichai School\IntroC#\slnMilesToKilometers\prjMilesToKilometers\obj\Debug\prjMilesToKilometers.Properties.Resources.resources
+D:\Wichai School\IntroC#\slnMilesToKilometers\prjMilesToKilometers\obj\Debug\prjMilesToKilometers.csproj.GenerateResource.cache
+D:\Wichai School\IntroC#\slnMilesToKilometers\prjMilesToKilometers\obj\Debug\prjMilesToKilometers.csproj.CoreCompileInputs.cache
+D:\Wichai School\IntroC#\slnMilesToKilometers\prjMilesToKilometers\obj\Debug\prjMilesToKilometers.exe
+D:\Wichai School\IntroC#\slnMilesToKilometers\prjMilesToKilometers\obj\Debug\prjMilesToKilometers.pdb

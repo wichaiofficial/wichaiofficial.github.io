@@ -1,0 +1,10 @@
+D:\Wichai School\IntroC#\slnprjHelloWorld\prjHelloWorld\bin\Debug\prjHelloWorld.exe.config
+D:\Wichai School\IntroC#\slnprjHelloWorld\prjHelloWorld\bin\Debug\prjHelloWorld.exe
+D:\Wichai School\IntroC#\slnprjHelloWorld\prjHelloWorld\bin\Debug\prjHelloWorld.pdb
+D:\Wichai School\IntroC#\slnprjHelloWorld\prjHelloWorld\obj\Debug\prjHelloWorld.csproj.AssemblyReference.cache
+D:\Wichai School\IntroC#\slnprjHelloWorld\prjHelloWorld\obj\Debug\prjHelloWorld.Properties.Resources.resources
+D:\Wichai School\IntroC#\slnprjHelloWorld\prjHelloWorld\obj\Debug\prjHelloWorld.csproj.GenerateResource.cache
+D:\Wichai School\IntroC#\slnprjHelloWorld\prjHelloWorld\obj\Debug\prjHelloWorld.csproj.CoreCompileInputs.cache
+D:\Wichai School\IntroC#\slnprjHelloWorld\prjHelloWorld\obj\Debug\prjHelloWorld.exe
+D:\Wichai School\IntroC#\slnprjHelloWorld\prjHelloWorld\obj\Debug\prjHelloWorld.pdb
+D:\Wichai School\IntroC#\slnprjHelloWorld\prjHelloWorld\obj\Debug\prjHelloWorld.FrmHelloWorld.resources

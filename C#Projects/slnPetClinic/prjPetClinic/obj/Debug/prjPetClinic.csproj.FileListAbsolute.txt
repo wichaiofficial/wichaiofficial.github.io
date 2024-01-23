@@ -1,0 +1,10 @@
+D:\Wichai School\IntroC#\slnPetClinic\prjPetClinic\bin\Debug\prjPetClinic.exe.config
+D:\Wichai School\IntroC#\slnPetClinic\prjPetClinic\bin\Debug\prjPetClinic.exe
+D:\Wichai School\IntroC#\slnPetClinic\prjPetClinic\bin\Debug\prjPetClinic.pdb
+D:\Wichai School\IntroC#\slnPetClinic\prjPetClinic\obj\Debug\prjPetClinic.csproj.AssemblyReference.cache
+D:\Wichai School\IntroC#\slnPetClinic\prjPetClinic\obj\Debug\prjPetClinic.frmPetClinic.resources
+D:\Wichai School\IntroC#\slnPetClinic\prjPetClinic\obj\Debug\prjPetClinic.Properties.Resources.resources
+D:\Wichai School\IntroC#\slnPetClinic\prjPetClinic\obj\Debug\prjPetClinic.csproj.GenerateResource.cache
+D:\Wichai School\IntroC#\slnPetClinic\prjPetClinic\obj\Debug\prjPetClinic.csproj.CoreCompileInputs.cache
+D:\Wichai School\IntroC#\slnPetClinic\prjPetClinic\obj\Debug\prjPetClinic.exe
+D:\Wichai School\IntroC#\slnPetClinic\prjPetClinic\obj\Debug\prjPetClinic.pdb
