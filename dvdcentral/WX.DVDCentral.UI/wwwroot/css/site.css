@@ -1,0 +1,132 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.bg-dark {
+    background: linear-gradient(173deg, rgba(255,255,255,1) 0%, rgba(173,216,230,1) 56%);
+}
+
+ul, li, a {
+    list-style:none;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: royalblue;
+}
+
+.header {
+    margin: 0px;
+    padding: 0px;
+    background-color: lightblue;
+}
+
+.header h1, .header h2, .header h3, .header h4 {
+        margin: 0px;
+        padding: 0px 0px 0px 10px;
+        color: Black;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+}
+
+.main {
+    margin: 0px;
+    padding: 0px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.sidebar {
+    border-width: 1px;
+    border-style: solid;
+    margin: 0px 10px 0px 10px;
+    min-height: 500px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+    .sidebar ul {
+        list-style-type: none;
+        padding-left: 5px;
+        padding-right: 0px;
+        font-size: 0px;
+    }
+
+    .sidebar a {
+        padding-left: 5px;
+        padding-right: 0px;
+        font-size: 20px;
+    }
+
+    .sidebar li {
+        font-size: 0px;
+    }
+
+.table tr:nth-child(even) {
+    background-color: lightblue;
+}
+
+.card-img {
+    height: 200px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px 10px;
+}
+
+.card-footer {
+    text-align: center;
+}
+
+.imageprop {
+    width: 100px;
+    height: 75px;
+}
+
+.imagepropmed {
+    width: 150px;
+    height: 200px;
+}
+
+.imagepropbig {
+    width: 675px;
+    height: 700px;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#imagepropbig {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}

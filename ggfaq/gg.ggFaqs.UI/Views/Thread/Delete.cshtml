@@ -1,0 +1,77 @@
+﻿@model gg.ggFaqs.BL.Models.Thread
+<style>
+    .wrap {
+        max-width: 550px;
+        margin: auto;
+        padding: 20px;
+        background: #fff;
+        margin-top: 100px;
+        border-radius: 15px;
+        box-shadow: 2px 4px 8px 0px gray;
+    }
+
+        .wrap h2 {
+            padding-bottom: 10px;
+        }
+
+    .close {
+        cursor: pointer;
+        color: dimgrey;
+        font-size: 1.25em;
+    }
+
+    .overlay {
+        height: 100%;
+        width: 100%;
+        display: none;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.7);
+    }
+
+    .btnCreate {
+        padding: 12px;
+        background: #2FACAC;
+        border-radius: 15px;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+</style>
+<script>
+    function openDeleteThreadForm() {
+        document.getElementById("deleteThreadForm").style.display = "block";
+    }
+    function closeDeleteThreadForm() {
+        document.getElementById("deleteThreadForm").style.display = "none";
+    }
+
+</script>
+
+<div id="deleteThreadForm" class="overlay">
+    <div class="wrap">
+        <button type="button" class="close btn-close-white" aria-label="Close"></button>
+        <span class="close float-end" aria-hidden="true" onclick="closeCreateThreadForm()">&times;</span>
+        <h3>Are you sure you want to delete this?</h3>
+        <div>
+            <form asp-action="Delete" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <input asp-for="Id" class="form-control" type="hidden" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Title" class="control-label"></label>
+                    <input asp-for="Title" class="form-control" />
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

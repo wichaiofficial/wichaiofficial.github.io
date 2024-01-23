@@ -1,0 +1,94 @@
+﻿body {
+    background: #273A40;
+}
+
+#wrapper {
+    background: #273A40;
+    min-height: 100%;
+    max-width: 1500px;
+    margin: 0px auto;
+    padding-bottom: 25px;
+    color: white;
+}
+
+.thread {
+    margin-top: 50px;
+    color: white;
+}
+
+.thread h2 {
+    width: 100%;
+    background: rgba(12,71,68,.15);
+    padding-left:10px;
+    border-radius: 5px;
+}
+
+.thread h4 {
+    background: rgba(22,32,18,.35);
+    margin-left: 20px;
+    padding-left:10px;
+    border-radius: 5px;
+}
+
+.thread p {
+    background: rgba(22,32,18,.55);
+    margin-left:20px;
+    padding-left:10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.comments {
+    color: white;
+    background: rgba(22,32,18,.55);
+    padding-top: 20px;
+    border-radius: 10px;
+}
+
+.comments h4 {
+    padding-left: 15px;
+}
+
+.btnAddComment {
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+    background-color: rgba(22,32,18,.35);
+    border-color: #51585e;
+    margin-bottom:10px;
+    margin-left:40px;
+}
+
+.btnAddComment:hover {
+    background-color: rgba(22,32,18,.95);
+    border-color: #565e64;
+}
+
+.Eventthread {
+    margin-top: 10px;
+    color: white;
+    padding-top:5px;
+    background-color: rgba(22,32,18,.35);
+}
+
+    .Eventthread h2 {
+        width: 100%;
+        background: rgba(12,71,68,.15);
+        padding-left: 10px;
+        border-radius: 5px;
+    }
+
+    .Eventthread h4 {
+        background: rgba(22,32,18,.35);
+        margin-left: 20px;
+        padding-left: 10px;
+        border-radius: 5px;
+    }
+
+    .Eventthread p {
+        background: rgba(22,32,18,.55);
+        margin-left: 20px;
+        padding-left: 10px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }

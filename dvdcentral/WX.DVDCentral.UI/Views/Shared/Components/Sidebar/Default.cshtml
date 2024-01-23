@@ -1,0 +1,29 @@
+﻿@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor
+
+@model IEnumerable<WX.DVDCentral.BL.Models.Genre>
+<link rel="stylesheet" href="../wwwroot/css/site.css" />
+
+<ul>
+	@foreach(var genre in Model)
+	{
+		<li><a asp-controller ="Movie"
+			asp-action="Browse"
+			asp-route-id="@genre.Id">@genre.Description</a>
+		</li>
+		
+	}
+	<li><a asp-controller="Movie" asp-action="Index">All</a></li>
+	<hr/>
+	@{
+		var fullname = HttpContextAccessor.HttpContext?.Session.GetString("fullname");
+		if (fullname != null)
+		{
+			<li><a asp-controller="User" asp-action="Logout">Logout</a></li>
+		}
+		else
+		{
+			<li><a asp-controller="User" asp-action="Login">Login</a></li>
+		}
+	}   
+</ul>

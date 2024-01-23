@@ -1,0 +1,103 @@
+﻿body {
+    background: url(../img/hogwarts-legacy.webp);
+    background-size: cover;
+}
+
+.homepage {
+    display: flex;
+    position: absolute;
+    width: 1218px;
+    left: 107px;
+    top: 474px;
+}
+
+small {
+    padding-right: 5px;
+    margin-left: 20px;
+}
+
+form a {
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+form a:hover {
+    color: lightgray;
+}
+
+
+.searchbox {
+    margin-top: 300px;
+}
+
+.searchbarOverlay {
+    position: fixed;
+    width: 32%;
+    margin-right: 9%;
+}
+
+.searchbar input {
+    flex: 1;
+    border: 0px;
+    outline: none;
+    padding: 14px 10px;
+    font-size: 1.05em;
+    color: white;
+    border-radius: 15px;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+}
+
+.searchResultsBox {
+    background-color: rgba(245,245,245,0.7);
+    font-size: 14px;
+}
+
+.smallimage {
+    margin-left: 15px;
+}
+
+.top5 {
+    margin-top: 50px;
+    color: white;
+}
+
+.data {
+    background: #273A40;
+    margin-right: 15px;
+    box-shadow: 5px 2px 5px #888888;
+}
+
+.data2 {
+    background: #1F8B8B;
+    box-shadow: 5px 2px 5px #888888;
+    margin-right: 15px;
+}
+
+.data3 {
+    background: #334C54;
+    box-shadow: 5px 2px 5px #888888;
+}
+
+th {
+    font-size: 1.05em;
+    border-bottom: #888888 1px solid;
+    color: ghostwhite;
+    padding: 10px;
+}
+
+td {
+    font-size: .95em;
+    border-bottom: 1px #888888 solid;
+    color: #273A40;
+    font-weight: bold;
+    background-color: white;
+}
+
+.searchDiv:hover {
+    background-color: #334C54;
+}

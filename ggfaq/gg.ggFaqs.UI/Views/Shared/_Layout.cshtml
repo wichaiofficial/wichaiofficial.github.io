@@ -1,0 +1,85 @@
+﻿@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] GG F.A.Q.s</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/gg.ggFaqs.UI.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <div class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-gradient border-bottom box-shadow">
+            <div class="container-fluid mx-auto">
+                <a asp-controller="Home" asp-action="Index"><img src="~/img/ggfaqs_logo_white.svg" width="60" height="60" /></a>
+                <p class="text-light ">GG F.A.Q.s</p>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav ms-auto">
+                        @{
+                            var navBar = HttpContextAccessor.HttpContext?.Session.GetString("customername");
+                            if (navBar != null)
+                            {
+                                <li class="nav-item"><a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                                <li class="nav-item"><a class="nav-link text-light" asp-area="" asp-controller="Library" asp-action="Index">Library</a></li>
+                                <li class="nav-item"><a class="nav-link text-light" asp-area="" asp-controller="Game" asp-action="Index">Games</a></li>
+                                <li class="nav-item"><a class="nav-link text-light" asp-area="" asp-controller="Community" asp-action="Index">Community</a></li>
+                            }
+                            else
+                            {
+                                <li class="nav-item"><a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                                <li class="nav-item"><a class="nav-link text-light" style="cursor: pointer" onclick="openLoginForm()">Library</a></li>
+                                <li class="nav-item"><a class="nav-link text-light" asp-area="" asp-controller="Game" asp-action="Index">Games</a></li>
+                                <li class="nav-item"><a class="nav-link text-light" asp-area="" asp-controller="Community" asp-action="Index">Community</a></li>
+                            }
+                        }
+                    </ul>
+                    <ul class="navbar-nav ms-auto login">
+                        @{
+                            var customer = HttpContextAccessor.HttpContext?.Session.GetString("customername");
+                            if (customer != null)
+                            {
+                                <li class="nav-item"><a class="nav-link text-light" href="#" onclick="togglesubmenu()">@customer <small>&#11167</small></a></li>
+                                <div id="submenu">
+                                    <ul>
+                                        <li class="nav-item"><a class="nav-link text-light" asp-controller="Customer" asp-action="Edit">Account</a></li>
+                                        <li class="nav-item"><a class="nav-link text-light" asp-controller="Post" asp-action="Create">Add Post</a></li>
+                                        <li class="nav-item"><a class="nav-link text-light" asp-controller="Customer" asp-action="Logout">Log Out</a></li>
+                                    </ul>
+                                </div>
+                                
+                            }
+                            else
+                            {
+                                <li class="nav-item"><a class="nav-link text-light" onclick="openSignupForm()">Sign Up</a></li>
+                                <li class="nav-item"><a class="nav-link text-light" onclick="openLoginForm()">Log In</a></li>
+                            }
+                        }
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - gg.ggFaqs.UI - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

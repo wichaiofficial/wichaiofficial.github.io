@@ -1,0 +1,82 @@
+﻿@model gg.ggFaqs.UI.ViewModels.HomeViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+<link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<script src="~/js/site.js" asp-append-version="true"></script>
+
+<div class="container-fluid searchbox">
+    <div class="form-group">
+        <form method="get" asp-controller="Game" asp-action="IndexSearch" autocomplete="off" class="searchbar" id="searchForm">
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                    <input asp-for="Game.Title" class="form-control text-dark" id="searchInput" placeholder="Search a game..." oninput="updateSearchResults()" onclick="showResults()" onfocusout="clearResultsBuffer()" value="" />
+                </div>
+                <div class="col-sm-1 col-md-1 col-lg-1 ms-0">
+                    <input type="submit" value="Search" class="btn-secondary"/>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class=" col-sm-6 col-md-6 col-lg-6 searchbarOverlay">
+                    <div id="searchResults"></div>
+                </div>
+                <div class=" col-sm-1 col-md-1">
+                </div>
+            </div>
+            <select hidden asp-for="Game.Title" class="form-control" asp-items="@(new SelectList(Model.Games, "Title", "Title"))" id="gameDropDownList"> </select>
+            <select hidden asp-for="Game.ImagePath" class="form-control" asp-items="@(new SelectList(Model.Games, "ImagePath", "ImagePath"))" id="imageDropDownList"> </select>
+            <span asp-validation-for="Game.Title" class="text-danger"></span>
+        </form>
+    </div>
+</div>
+<div class="container-fluid top5">
+    <div class="row justify-content-center">
+        <table class="col-sm-12 col-md-4 col-lg-3 data">
+            <tr>
+                <th class="ps-2">Top 5 Games</th>
+            </tr>
+            @foreach (var item in Model.Games)
+            {
+                <tr>
+                    <td class="ps-2">
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </td>
+                </tr>
+            }
+        </table>
+        <table class="col-sm-12 col-md-4 col-lg-3 data2">
+            <tr>
+                <th class="ps-2">Top 5 Threads</th>
+            </tr>
+            @foreach (var item in Model.Threads)
+            {
+                <tr>
+                    <td class="ps-2">
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </td>
+                </tr>
+            }
+        </table>
+        <table class="col-sm-12 col-md-4 col-lg-3 data3">
+            <tr>
+                <th class="ps-2">Top 5 Events</th>
+            </tr>
+            @foreach (var item in Model.EventThreads)
+            {
+                <tr>
+                    <td class="ps-2">
+                        @Html.DisplayFor(modelItem => item.EventName)
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>
+
+@*<div class="text-center text-light">
+    @Html.DisplayFor(modelItem => Model.RandomGameFact)
+</div>*@
+
+@Html.Partial("LoginPartial", Model.Customer)
+@Html.Partial("SignUpPartial", Model.Customer)

@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WX.DVDCentral.BL.Models\WX.DVDCentral.BL.Models.csproj" />
+    <ProjectReference Include="..\WX.DVDCentral.BL\WX.DVDCentral.BL.csproj" />
+  </ItemGroup>
+
+</Project>

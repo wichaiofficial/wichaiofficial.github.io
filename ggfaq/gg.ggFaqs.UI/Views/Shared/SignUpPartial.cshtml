@@ -1,0 +1,104 @@
+﻿@model gg.ggFaqs.BL.Models.Customer
+<style>
+    .wrap {
+        max-width: 550px;
+        margin: auto;
+        padding: 20px;
+        background: #fff;
+        margin-top: 100px;
+        border-radius: 15px;
+        box-shadow: 2px 4px 8px 0px gray;
+    }
+
+    .wrap h2 {
+        padding-bottom: 10px;
+    }
+
+    .close {
+        cursor: pointer;
+        color: dimgrey;
+        font-size: 1.25em;
+    }
+
+    .overlay {
+        height: 100%;
+        width: 100%;
+        display: none;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.7);
+    }
+
+    .btnCreate {
+        padding: 12px;
+        background: #2FACAC;
+        border-radius: 15px;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+
+</style>
+<script>
+    function openSignupForm() {
+        document.getElementById("signupForm").style.display = "block";
+    }
+    function closeSignupForm() {
+        document.getElementById("signupForm").style.display = "none";
+    }
+
+    function NewLogin() {
+        document.getElementById("signupForm").style.display = "none";
+        document.getElementById("loginForm").style.display = "block";
+    }
+</script>
+
+<div id="signupForm" class="overlay">
+    <div class="wrap">
+        <button type="button" class="close btn-close-white" aria-label="Close"></button>
+        <span class="close float-end" aria-hidden="true" onclick="closeSignupForm()">&times;</span>
+        <h2>Sign Up</h2>
+        <form method="post" asp-controller="Customer" asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="FirstName" class="control-label"></label>
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastName" class="control-label"></label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Username" class="control-label"></label>
+                <input asp-for="Username" class="form-control" />
+                <span asp-validation-for="Username" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DisplayName" class="control-label"></label>
+                <input asp-for="DisplayName" class="form-control" />
+                <span asp-validation-for="DisplayName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Sign Up" class="btnCreate" />
+            </div>
+            <div>
+                <small>Already have an account?</small><a href="#" onclick="NewLogin()">Log In</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

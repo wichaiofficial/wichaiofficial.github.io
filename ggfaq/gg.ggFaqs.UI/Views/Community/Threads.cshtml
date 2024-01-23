@@ -1,0 +1,25 @@
+﻿@model gg.ggFaqs.UI.ViewModels.ThreadListViewModel
+
+@{
+    ViewData["Title"] = "Threads";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Threads</h1>
+
+
+<table class="table">
+    <div class="row">
+        @foreach (var item in Model.Threads)
+        {
+            <div class="Col-sm-12 col-md-12 col-lg-2 d-flex mt-2">
+                <div class="card-header">
+                    <div class="titlelink">
+                        <input asp-for="@item.Thread.Id" class="form-control" type="hidden" />
+                        @Html.ActionLink(@item.Thread.Title, "Details", "Thread", new { item.Thread.Id })
+                </div>
+            </div>
+            </div>
+        }
+    </div>
+</table>

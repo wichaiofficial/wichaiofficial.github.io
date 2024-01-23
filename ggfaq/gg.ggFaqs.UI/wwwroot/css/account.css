@@ -1,0 +1,88 @@
+﻿body {
+    background: #273A40;
+}
+#wrapper {
+    background: #273A40;
+    min-height: 100%;
+    max-width: 1500px;
+    margin: 0px auto;
+    padding-bottom: 25px;
+}
+.info {
+    background: rgba(22,32,18,.35);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+    
+
+.info p {
+    margin-left: 20px;
+}
+
+.info button {
+    margin-left:20px;
+    padding: 5px 10px;
+}
+
+
+h2 {
+    color:white;
+    margin-left:400px;
+    margin-top:50px;
+}
+
+
+    .EditThreads {
+        color: white;
+    }
+
+        .EditThreads li {
+            padding: 5px;
+        }
+
+            .EditThreads li:nth-child(even) {
+                background: rgba(12,71,68,.35);
+            }
+
+            .EditThreads li:nth-child(odd) {
+                background: rgba(22,32,18,.35);
+            }
+
+.wrap {
+    max-width:1000px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    margin-top: 100px;
+    border-radius: 15px;
+    box-shadow: 2px 4px 8px 0px gray;
+}
+
+.wrap h2 {
+    padding-bottom: 10px;
+    color: black
+}
+
+.close {
+    cursor: pointer;
+    color: dimgrey;
+    font-size: 1.25em;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+}
+
+@media screen and (max-width: 600px) {
+    h2 {
+        margin-left: 50px;
+    }
+}

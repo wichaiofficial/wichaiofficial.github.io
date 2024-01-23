@@ -1,0 +1,103 @@
+﻿@model gg.ggFaqs.UI.ViewModels.ThreadViewModel
+
+<style>
+    .wrap {
+        max-width: 700px;
+        margin: auto;
+        padding: 20px;
+        background: #fff;
+        margin-top: 100px;
+        border-radius: 15px;
+        box-shadow: 2px 4px 8px 0px gray;
+    }
+
+    .wrap h2 {
+        padding-bottom: 10px;
+    }
+
+    .close {
+        cursor: pointer;
+        color: dimgrey;
+        font-size: 1.25em;
+    }
+
+    .overlay {
+        height: 100%;
+        width: 100%;
+        display: none;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.7);
+    }
+
+    .btnCreate {
+        padding: 12px;
+        background: #2FACAC;
+        border-radius: 15px;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    textarea {
+        display: block;
+        width: 100%;
+        padding:.375rem .75rem;
+        font-size: 1rem;
+        line-height:1.5;
+        font-weight:400;
+        color:#212529;
+        background-color:#fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        height: 200px;
+        border-radius:.25rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+
+</style>
+<script>
+    function openCreateThreadForm() {
+        document.getElementById("createThreadForm").style.display = "block";
+    }
+    function closeCreateThreadForm() {
+        document.getElementById("createThreadForm").style.display = "none";
+    }
+
+</script>
+
+<div id="createThreadForm" class="overlay">
+    <div class="wrap">
+        <button type="button" class="close btn-close-white" aria-label="Close"></button>
+        <span class="close float-end" aria-hidden="true" onclick="closeCreateThreadForm()">&times;</span>
+        <h2>Add New Thread</h2>
+        <form asp-action="Create" asp-controller="Thread" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Thread.Title" class="control-label"></label>
+                <input asp-for="Thread.Title" class="form-control" />
+                <span asp-validation-for="Thread.Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Thread.Subject" class="control-label"></label>
+                <textarea asp-for="Thread.Subject"></textarea>
+                <span asp-validation-for="Thread.Subject" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Thread.GameId" class="control-label"></label>
+                <select asp-for="Thread.GameId" class="form-control" asp-items="@(new SelectList(Model.Games,"Id", "Title"))"></select>
+                <span asp-validation-for="Thread.GameId" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-2">
+                <input type="submit" value="Create" class="btn btn-secondary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+            @section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

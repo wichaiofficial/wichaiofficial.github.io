@@ -1,0 +1,79 @@
+﻿@model WX.DVDCentral.BL.Models.Order
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="ps-2">
+    <dl class="row">
+        <div class="col-2">
+            <dt>
+                @Html.DisplayNameFor(model => model.CustomerName)
+            </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.Username)
+            </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.Id)
+            </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.OrderDate)
+            </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.ShipDate)
+            </dt>
+        </div>
+        <div class="col-2" style="font-size:.75em;">
+            <dd>
+                @Html.DisplayFor(model => model.CustomerName)
+            </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Username)
+            </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Id)
+            </dd>          
+            <dd>
+                @Html.DisplayFor(model => model.OrderDate)
+            </dd>          
+            <dd>
+                @Html.DisplayFor(model => model.ShipDate)
+            </dd>
+        </div>
+        <div class="col-2">
+            <dt>
+                @Html.DisplayNameFor(model => model.SubTotal)
+            </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.Tax)
+            </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.Total)
+            </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.UserFullName)
+            </dt>
+        </div>
+        <div class="col-2" style ="font-size:.75em;">
+            <dd>
+                @Html.DisplayFor(model => model.SubTotal)
+            </dd>            
+            <dd>
+                @Html.DisplayFor(model => model.Tax)
+            </dd>           
+            <dd>
+                @Html.DisplayFor(model => model.Total)
+            </dd>
+            <dd>
+                @Html.DisplayFor(model => model.UserFullName)
+            </dd>
+        </div>
+    </dl>
+</div>
+<div class="ps-2">
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    <a asp-action="Index">Back to List</a>
+</div>
+<div>
+    <partial name ="_OrderItemsPartial" model="Model.Orderitem"/>
+</div>

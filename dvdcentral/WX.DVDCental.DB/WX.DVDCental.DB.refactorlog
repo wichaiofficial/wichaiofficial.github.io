@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="287f6100-60e8-466e-9983-4ed5fa4b7709" ChangeDateTime="09/21/2022 23:30:10">
+    <Property Name="ElementName" Value="[dbo].[tblCustomer].[ZIO]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblCustomer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ZIP" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="34e5e52b-124f-45ef-87f4-4d0c3ca2c408" ChangeDateTime="10/05/2022 02:22:06">
+    <Property Name="ElementName" Value="[dbo].[tblCustomer].[ZIP]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblCustomer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Zip" />
+  </Operation>
+</Operations>

@@ -1,0 +1,50 @@
+﻿@model gg.ggFaqs.UI.ViewModels.GameDetailsViewModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" href="~/css/gameDetails.css" asp-append-version="true" />
+<script src="~/js/site.js" asp-append-version="true"></script>
+
+<div id="wrapper" class="row justify-content-center d-flex bg-gradient">
+    <div class="col-sm-12 col-md-3 col-lg-2">
+        <div>
+            <img src="@Html.DisplayFor(model=>model.Games[0].ImagePath)" alt="@Html.DisplayFor(model=>model.Games[0].Title)" width="225" height="275"/>
+            <div class="gameprofile bg-gradient pt-3">
+                <p>Release Date: @Html.DisplayFor(model=>model.Games[0].ReleaseDate)</p>               
+                <p>Publisher: @Html.DisplayFor(model=>model.Games[0].Publisher.Name)</p>           
+                <p>Genre: @Html.DisplayFor(model=>model.Games[0].Genre.Name)</p>
+                
+                <p> Add Game to library @Html.ActionLink("+", "AddGameToLibrary", "Library", new{ id=Model.Games[0].Id}, new { @class = "btn btnAddToLibrary" }) </p>
+                <div>
+                    @foreach (var item in Model.Games)
+                    {
+                        <img class="imgIcon"
+                         alt="@item.Title"
+                         id="movieimage"
+                         onclick="on('@item.SystemImageIcon');"
+                         src="@Url.Content(@item.SystemImageIcon)" />
+                    }
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-8 col-lg-9">
+        <div class="gameoverview">
+            <h1 class="bg-gradient">@Html.DisplayFor(model=>model.Games[0].Title)</h1>
+            <h5 class="bg-gradient">Overview</h5>
+            <p class="ms-2 bg-gradient">@*@Html.DisplayFor(model=>model.Games[0].GameDescriptionId)*@Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porttitor leo a diam sollicitudin tempor id eu nisl. Mollis nunc sed id semper risus. Consectetur a erat nam at. Sit amet nulla facilisi morbi tempus. Diam maecenas sed enim ut sem viverra aliquet eget. Egestas integer eget aliquet nibh. Purus gravida quis blandit turpis. Adipiscing at in tellus integer feugiat. Vitae et leo duis ut diam quam. A arcu cursus vitae congue mauris rhoncus. Sit amet tellus cras adipiscing enim. Nullam vehicula ipsum a arcu cursus. Gravida in fermentum et sollicitudin ac orci phasellus.</p>
+            <button class="btnAddThread" onclick="openCreateThreadForm()">New Thread</button>
+        </div>
+        <div class="gamethread">
+            @Html.Partial("ThreadByGame", Model.Threads)
+        </div>
+    </div>
+</div>
+<div>
+    @Html.Partial("LoginPartial", Model.Customer)
+    @Html.Partial("SignUpPartial", Model.Customer)
+    @Html.Partial("CreateThread", new gg.ggFaqs.UI.ViewModels.ThreadViewModel())
+</div>

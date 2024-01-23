@@ -1,0 +1,26 @@
+SQLserver authentication login:
+Username: CloudSA9dfb2836
+Password: GGfaq123!
+
+Install-Package Microsoft.EntityFrameworkCore.SqlServer
+Install-Package Microsoft.EntityFrameworkCore.Tools
+Install-Package Microsoft.VisualStudio.Web.CodeGeneration.Design
+
+Command to rescaffold PL: 
+Scaffold-DbContext "Server=(localdb)\MSSQLLocalDB;Database=GamerLocal.DB;Integrated Security=True" Microsoft.EntityFrameworkCore.SqlServer -Context ggEntities -UseDatabaseNames -force
+
+Remote Connection string to paste into PL:
+"Server=gaminggroupwizards.database.windows.net;Database=GamingGroup;User Id=CloudSA9dfb2836;Password=GGfaq123!"
+
+Local Connectin string to paste into PL:
+
+
+Paste this over "OnConfiguring" method in the entity class if we rescaffold to have lazy loading and both local and remote connection strings:
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+            //Local Connection
+        optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=GamerLocal.Db;Integrated Security=True");
+            //Remote Connection
+        //optionsBuilder.UseSqlServer("Server=gaminggroupwizards.database.windows.net;Database=GamingGroup;User Id=CloudSA9dfb2836;Password=GGfaq123!");
+        optionsBuilder.UseLazyLoadingProxies();
+    }

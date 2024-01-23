@@ -1,0 +1,10 @@
+﻿BEGIN
+	INSERT INTO dbo.tblPost(Id, Content, Created, ThreadId, CustomerId, ImagePath)
+	VALUES
+	(1, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat diam ut venenatis tellus. Sagittis id consectetur purus ut faucibus. Suspendisse sed nisi lacus sed viverra. Ultricies leo integer malesuada nunc vel risus commodo.', '20230102 12:32:31', 1, 1, 'None'),
+	(2, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat diam ut venenatis tellus. Sagittis id consectetur purus ut faucibus. Suspendisse sed nisi lacus sed viverra. Ultricies leo integer malesuada nunc vel risus commodo.', '20230102 12:32:31', 1, 1, 'None'),
+	(3, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat diam ut venenatis tellus. Sagittis id consectetur purus ut faucibus. Suspendisse sed nisi lacus sed viverra. Ultricies leo integer malesuada nunc vel risus commodo.', '20230102 12:32:31', 1, 1, 'None'),
+	(4, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat diam ut venenatis tellus. Sagittis id consectetur purus ut faucibus. Suspendisse sed nisi lacus sed viverra. Ultricies leo integer malesuada nunc vel risus commodo.', '20230102 12:32:31', 1, 1, 'None'),
+	(5, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat diam ut venenatis tellus. Sagittis id consectetur purus ut faucibus. Suspendisse sed nisi lacus sed viverra. Ultricies leo integer malesuada nunc vel risus commodo.', '20230102 12:32:31', 1, 1, 'None')
+
+END

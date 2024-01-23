@@ -1,0 +1,16 @@
+﻿@model IEnumerable<gg.ggFaqs.BL.Models.Thread>
+<link rel="stylesheet" href="~/css/gameDetails.css" asp-append-version="true" />
+<div class="gamelink">
+    <h5 class="bg-gradient">Game Threads</h5>
+    <ol>
+        @foreach (var item in Model)
+        {
+            <li class="row mt-2">
+                <a href="#">@Html.ActionLink(item.Title, "Details", "Thread", new{id=item.Id})</a>
+                <small>@Html.DisplayFor(model=>item.Subject)</small>
+                <small>@Html.DisplayFor(model=>item.Created)</small>
+                <small class="comment-count">4 comments</small> <small>Last Post by @*@Html.DisplayFor(model=>item.CustomerId)*@LightDancer</small>
+            </li>
+        }
+    </ol>
+</div>   

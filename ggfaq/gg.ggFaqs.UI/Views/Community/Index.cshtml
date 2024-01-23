@@ -1,0 +1,24 @@
+﻿@model gg.ggFaqs.UI.ViewModels.EventViewModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" href="~/css/threadDetails.css" asp-append-version="true" />
+<div id="wrapper" class="bg-gradient">
+    <div class="row justify-content-center">
+        <h2 class="ms-5 mt-3">Community Events</h2>
+        @foreach (var item in Model.EventThreads)
+        {              
+        <div class="col-11 Eventthread mb-3">
+            <h2 class="bg-gradient">@Html.DisplayFor(model=>item.EventName)</h2>
+            <h4>@Html.DisplayFor(model=>item.EventDate)</h4>
+                <h5>Event Information | @Html.ActionLink("Details", "Details", new {  id=item.Id },new {@style="color: white; font-size: .75em"})</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas egestas fringilla phasellus faucibus scelerisque. Tempor orci eu lobortis elementum nibh. Et odio pellentesque diam volutpat commodo sed egestas egestas. Pretium viverra suspendisse potenti nullam ac.</p>          
+        </div>
+        }
+    </div>
+</div>
+
+@Html.Partial("LoginPartial", Model.Customer)
+@Html.Partial("SignUpPartial", Model.Customer)

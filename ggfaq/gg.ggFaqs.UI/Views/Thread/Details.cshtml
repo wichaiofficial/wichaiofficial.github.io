@@ -1,0 +1,46 @@
+﻿@model gg.ggFaqs.UI.ViewModels.ThreadViewModel
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" href="~/css/threadDetails.css" asp-append-version="true" />
+<div id="wrapper" class="bg-gradient">
+    @*<div class="row">
+        <div class="col-12">
+            <img src="@Html.DisplayFor(model=>model.Games.ImagePath)" alt="@Html.DisplayFor(model=>model.Games.Title)" width="225" height="275"/>
+        </div>
+    </div>*@
+    <div class="row justify-content-center post">
+        <div class="col-11 thread">
+            <h2 class="bg-gradient">@Html.DisplayFor(model => model.Customer.Username) | @Html.DisplayFor(model => model.Game.Title)</h2>
+            <h4>@Html.DisplayFor(model => model.Thread.Title)</h4>
+            <p>@Html.DisplayFor(model => model.Thread.Subject)</p>
+            <button class="btnAddComment" onclick="openCreatePostForm()">Comment</button>
+        </div>
+    </div>
+    @foreach (var item in Model.Posts)
+    {
+        <div class="row justify-content-center mb-2">
+            <div class="col-11">
+                <div class="row justify-content-center comments">
+                    <div class="col-2">
+                        <h4>@Html.DisplayFor(model => item.Customer.Username)</h4>
+                    </div>
+                    <div class="col-10">
+                        <p>@Html.DisplayFor(model => item.Post.Content)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    <a href="javascript:history.go(-1)" style="color: white; margin-left:100px; margin-top:20px;">Back to List</a>
+</div>
+@*<button class="btn btn-danger"><a class="nav-link text-light" style="cursor: pointer" onclick="openEditThreadForm()">Edit Thread</a></button>
+  <button class="btn btn-danger"><a class="nav-link text-light" style="cursor: pointer" onclick="openDeleteThreadForm()">Delete Thread</a></button>
+  <button class="btn btn-danger"><a class="nav-link text-light" style="cursor: pointer" onclick="openCreatePostForm()">Create Post</a></button>
+*@
+
+@Html.Partial("Delete", Model.Thread)
+@Html.Partial("Edit", Model.Thread)
+@Html.Partial("CreatePost", new gg.ggFaqs.UI.ViewModels.PostViewModel(Model.Thread.Id))

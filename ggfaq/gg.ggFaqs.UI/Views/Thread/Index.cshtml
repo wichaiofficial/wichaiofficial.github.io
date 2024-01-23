@@ -1,0 +1,25 @@
+﻿@model gg.ggFaqs.UI.ViewModels.ThreadListViewModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+    <button><a class="nav-link text-light" style="cursor: pointer" onclick="openCreateThreadForm()">Create</a></button>
+
+    @foreach (var item in Model.Threads)
+    {
+        <div class="Col-sm-12 col-md-12 col-lg-2">
+            <p>@Html.DisplayFor(model=>item.Customer.Username)</p>
+            <p>@Html.DisplayFor(modelItem => item.Game.Title)</p>
+            <h3>@Html.DisplayFor(model=>item.Thread.Title)</h3>
+            <h5>@Html.DisplayFor(model=>item.Thread.Subject)</h5>
+            @Html.ActionLink("Details", "Details", new {  id=item.Thread.Id  }) |
+        </div>
+    }
+
+
+@Html.Partial("LoginPartial", Model.Customer)
+@Html.Partial("SignUpPartial", Model.Customer)
+@Html.Partial("Create", new gg.ggFaqs.UI.ViewModels.ThreadViewModel())

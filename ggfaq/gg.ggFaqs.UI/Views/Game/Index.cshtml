@@ -1,0 +1,136 @@
+﻿@model gg.ggFaqs.UI.ViewModels.GameListViewModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" href="~/css/game.css" asp-append-version="true" />
+<script src="~/js/site.js" asp-append-version="true"></script>
+<div>
+    @Html.Partial("LoginPartial", Model.Customer)
+    @Html.Partial("SignUpPartial", Model.Customer)
+</div>
+<div id="wrapper">
+    <div class="row justify-content-center d-flex bg-gradient">
+        <div class="col-sm-12 col-md-3 col-lg-2 sidebar text-light justify-content-center">
+            <h1 style="margin-left:100px; margin-top:50px;">Games</h1>
+            <form asp-action="ApplyFilters" method="post">
+                <div class="accordion accordion-flush col-12" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"> Genres </button>
+                        </h2>
+                        @*Genre Filtering Options*@
+                        <div id="flush-collapseOne" class="accordion-collapse col ms-3" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            @Html.CheckBoxFor(model => model.Genres[0].IsChecked) <span>Sports</span> <br />
+                            <input asp-for="Genres[0].Id" class="form-control" type="hidden" />
+
+                            @Html.CheckBoxFor(model => model.Genres[1].IsChecked) <span>Shooter</span> <br />
+                            <input asp-for="Genres[1].Id" class="form-control" type="hidden" />
+
+                            @Html.CheckBoxFor(model => model.Genres[2].IsChecked) <span>RPG</span> <br />
+                            <input asp-for="Genres[2].Id" class="form-control" type="hidden" />
+
+                            @Html.CheckBoxFor(model => model.Genres[3].IsChecked) <span>Battle Royale</span> <br />
+                            <input asp-for="Genres[3].Id" class="form-control" type="hidden" />
+
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"> Ratings </button>
+                        </h2>
+                        @*Ratings Filtering Options*@
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse ms-3" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            @Html.CheckBoxFor(model => model.Ratings[0].IsChecked) <span>E</span> <br />
+                            <input asp-for="Ratings[0].Id" class="form-control" type="hidden" />
+
+                            @Html.CheckBoxFor(model => model.Ratings[1].IsChecked) <span>E10+</span> <br />
+                            <input asp-for="Ratings[1].Id" class="form-control" type="hidden" />
+
+                            @Html.CheckBoxFor(model => model.Ratings[2].IsChecked) <span>T</span> <br />
+                            <input asp-for="Ratings[2].Id" class="form-control" type="hidden" />
+
+                            @Html.CheckBoxFor(model => model.Ratings[3].IsChecked) <span>M</span> <br />
+                            <input asp-for="Ratings[3].Id" class="form-control" type="hidden" />
+
+                            @Html.CheckBoxFor(model => model.Ratings[4].IsChecked) <span>A</span> <br />
+                            <input asp-for="Ratings[4].Id" class="form-control" type="hidden" />
+
+                            @Html.CheckBoxFor(model => model.Ratings[5].IsChecked) <span>RP</span> <br />
+                            <input asp-for="Ratings[5].Id" class="form-control" type="hidden" />
+
+                            @Html.CheckBoxFor(model => model.Ratings[6].IsChecked) <span>RP17+</span> <br />
+                            <input asp-for="Ratings[6].Id" class="form-control" type="hidden" />
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Manufacturers
+                            </button>
+                        </h2>
+                        @*Manufacturers Filtering Options*@
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <p>List Of Manufacturers</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group pt-1">
+                    <input type="submit" value="Save" class="btn btn-secondary" />
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-12 col-md-8 col-lg-10 mt-5">
+            <div class="row justify-content-center">
+                <div class="form-group pb-4">
+                    <form method="get" asp-controller="Game" asp-action="IndexSearch" autocomplete="off" class="searchbar">
+                        <div class="row justify-content-center">
+                            <div class="col-sm-8 col-md-6 col-lg-6">
+                                <input type="search" class="form-control" id="searchInput" placeholder="Search a game..." oninput="updateSearchResults()" onclick="showResults()" onfocusout="clearResults()" />
+                            </div>
+                            <div class="col-sm-1 col-md-1 col-lg-1">
+                                <input type="submit" value="Search" class="btn-secondary" />
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-sm-6 col-md-6 col-lg-6 searchbarOverlay">
+                                <div id="searchResults"></div>
+                            </div>
+                            <div class="col-sm-1 col-md-1">
+                            </div>
+                        </div>
+                        <select hidden asp-for="Game.Title" class="form-control" asp-items="@(new SelectList(Model.Games, "Title", "Title"))" id="gameDropDownList"> </select>
+                        <select hidden asp-for="Game.ImagePath" class="form-control" asp-items="@(new SelectList(Model.Games, "ImagePath", "ImagePath"))" id="imageDropDownList"> </select>
+                        <span asp-validation-for="Game.Title" class="text-danger"></span>
+                    </form>
+                </div>
+                <div class=" GameTable">
+                    <div class="row">
+                        @foreach (var item in Model.Games)
+                        {
+                            <div class="Col-sm-12 col-md-12 col-lg-2 d-flex mt-2">
+                                <div class="card-header">
+                                    <img class="imagegamemed"
+                                     alt="@item.Title"
+                                     id="movieimage"
+                                     onclick="on('@item.ImagePath');"
+                                     src="@item.ImagePath" />
+                                    <br />
+                                    <div class="titlelink">
+                                        <input asp-for="@item.Id" class="form-control" type="hidden" />
+                                        @Html.ActionLink(@item.Title, "Details", "Game", new { item.Id })
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

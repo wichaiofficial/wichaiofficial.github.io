@@ -1,0 +1,105 @@
+﻿body {
+    background: #273A40;
+}
+
+#wrapper {
+    background: #273A40;
+    min-height: 100%;
+    max-width: 1500px;
+    margin: 0px auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: white;
+}
+
+.gameprofile {
+    margin-top: 10px
+}
+
+.gameoverview {
+    margin-top: 25px;
+}
+
+h5 {
+    background: rgba(12,71,68,.15);
+    width: 100%;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.gamelink a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.15em;
+}
+
+    .gamelink a:hover {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+
+.gamelink li:nth-child(even) {
+    background: rgba(12,71,68,.35);
+}
+
+.gamelink li:nth-child(odd) {
+    background: rgba(22,32,18,.35);
+}
+
+#wrapper h1 {
+    width: 100%;
+    background: rgba(12,71,68,.15);
+    padding-left: 10px;
+}
+
+.gameprofile {
+    background: rgba(12,71,68,.15);
+    width: 100%;
+    padding-left: 10px;
+}
+
+.gameprofile p {
+    margin-bottom: 0px;
+}
+
+.gameoverview p {
+    background: rgba(22,32,18,.35);
+    margin-bottom:10px;
+}
+
+.btnAddThread {
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    background-color: rgba(22,32,18,.35);
+    border-color: #51585e;
+    margin-left:0px;
+    margin-bottom:15px;
+}
+
+    .btnAddThread:hover {
+        background-color: rgba(22,32,18,.95);
+        border-color: #565e64;
+    }
+
+.imgIcon {
+    height: 25px;
+    width: 25px;
+}
+
+.btnAddToLibrary {
+    border-radius: 5px;
+    color: white;
+    padding: 2px;
+    width:30px;
+    background-color: rgba(22,32,18,.35);
+    border-color: #51585e;
+    margin-bottom: 15px;
+    margin-left:10px;
+}
+
+    .btnAddToLibrary:hover {
+        background-color: rgba(22,32,18,.95);
+        border-color: #565e64;
+    }

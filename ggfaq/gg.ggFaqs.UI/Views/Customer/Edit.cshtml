@@ -1,0 +1,157 @@
+﻿@model gg.ggFaqs.UI.ViewModels.CustomerProfileViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" href="~/css/account.css" asp-append-version="true" />
+<script>
+    function openEditForm() {
+        document.getElementById("EditForm").style.display = "block";
+    }
+    function closeEditForm() {
+        document.getElementById("EditForm").style.display = "none";
+    }
+</script>
+<div id="wrapper">
+    <div class="row justify-content-center bg-gradient">
+        <h2>Account Details</h2>
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-9 col-lg-9 info">
+                <h4 class="bg-gradient">User Information</h4>
+                <p>First Name: @Html.DisplayFor(model=>model.Customer.FirstName)</p>
+                <p>Last Name: @Html.DisplayFor(model=>model.Customer.LastName)</p>
+                <p>Display Name: @Html.DisplayFor(model=>model.Customer.DisplayName)</p>
+                <p>Username: @Html.DisplayFor(model=>model.Customer.Username)</p>
+                <p>About Me: @Html.DisplayFor(model=>model.Customer.AboutMe)</p>
+            </div>
+            <div class="col-sm-12 col-md-9 col-lg-9 info">
+                <h4 class="bg-gradient">Contact Information</h4>
+                <p>Address: @Html.DisplayFor(model=>model.Customer.Address)</p>
+                <p>City: @Html.DisplayFor(model=>model.Customer.City)</p>
+                <p>State: @Html.DisplayFor(model=>model.Customer.State)</p>
+                <p>Zip: @Html.DisplayFor(model=>model.Customer.ZipCode)</p>
+                <p>Phone: @Html.DisplayFor(model=>model.Customer.Phone)</p>
+                <button class="btn-secondary" onclick="openEditForm()">Edit</button>
+            </div>
+        </div>
+        <div class="row justify-content-center EditThreads mt-3">
+            <div class="col-sm-12 col-md-9 col-lg-9">
+                <h4>Your Threads</h4>
+                <ol>
+                    @foreach (var item in Model.Threads)
+                    {
+                        <li class="row mt-2">
+                            <h4 class="bg-gradient">@Html.DisplayFor(modelItem => item.Game.Title)</h4>
+                            <h5>@Html.DisplayFor(model=>item.Thread.Title)</h5>
+                            <p class="ps-3">@Html.DisplayFor(model=>item.Customer.Username)</p>
+                            <small class="ms-4">@Html.DisplayFor(model=>item.Thread.Subject)</small>
+                            @Html.ActionLink("Delete", "Delete", "Thread", new {  id=item.Thread.Id  })
+                        </li>
+                    }
+                </ol>
+            </div>
+        </div>
+        <div class="row justify-content-center EditThreads mt-3">
+            <div class="col-sm-12 col-md-9 col-lg-9">
+                <h4>Threads you Commented On</h4>
+                <ol>
+                    @for (int i = 0; i < Model.ThreadsForPosts.Count; i++)
+                    {
+                        <li class="row mt-2">
+                            <h5 class="bg-gradient">@Html.DisplayFor(model=>Model.ThreadsForPosts[i].Thread.Title)</h5>
+                            @Html.ActionLink("Details", "Details", "Thread", new {  id=Model.ThreadsForPosts[i].Thread.Id  })
+
+                        </li>
+                        <li class="row mt-2">
+                            <p class="bg-gradient">@Html.DisplayFor(model=>Model.Customer.Username)</p>
+                            <p>@Html.DisplayFor(modelItem => Model.Posts[i].Content)</p>
+                            @Html.ActionLink("Delete", "Delete", "Thread", new {  id=Model.Posts[i].Id  })
+                        </li>
+                    }
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="EditForm" class="overlay">
+    <div class="wrap">
+       <button type="button" class="close btn-close-white" aria-label="Close"></button>
+       <span class="close float-end" aria-hidden="true" onclick="closeEditForm()">&times;</span>
+        <form class="row justify-content-center" asp-action="Edit">
+            <h3>Edit User Account</h3>
+            <hr />
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class=" col-sm-12 col-lg-6">
+                <h4>Profile</h4>
+                <input hidden asp-for="Customer.Id" />
+                <div class="form-group">
+                    <label asp-for="Customer.ProfileImage" class="control-label"></label>
+                    <input asp-for="Customer.ProfileImage" class="form-control" />
+                    <span asp-validation-for="Customer.ProfileImage" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Customer.FirstName" class="control-label"></label>
+                    <input asp-for="Customer.FirstName" class="form-control" />
+                    <span asp-validation-for="Customer.FirstName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Customer.LastName" class="control-label"></label>
+                    <input asp-for="Customer.LastName" class="form-control" />
+                    <span asp-validation-for="Customer.LastName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Customer.Username" class="control-label"></label>
+                    <input asp-for="Customer.Username" class="form-control" />
+                    <span asp-validation-for="Customer.Username" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Customer.AboutMe" class="control-label"></label>
+                    <input asp-for="Customer.AboutMe" class="form-control" />
+                    <span asp-validation-for="Customer.AboutMe" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+                <h4>Contact</h4>
+                <div class="form-group">
+                    <label asp-for="Customer.Address" class="control-label"></label>
+                    <input asp-for="Customer.Address" class="form-control" />
+                    <span asp-validation-for="Customer.Address" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Customer.City" class="control-label"></label>
+                    <input asp-for="Customer.City" class="form-control" />
+                    <span asp-validation-for="Customer.City" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Customer.State" class="control-label"></label>
+                    <input asp-for="Customer.State" class="form-control" />
+                    <span asp-validation-for="Customer.State" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Customer.ZipCode" class="control-label"></label>
+                    <input asp-for="Customer.ZipCode" class="form-control" />
+                    <span asp-validation-for="Customer.ZipCode" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Customer.Phone" class="control-label"></label>
+                    <input asp-for="Customer.Phone" class="form-control" />
+                    <span asp-validation-for="Customer.Phone" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group confirm d-flex mt-3">
+                <input type="submit" value="Save" class="btn btn-secondary" />
+            </div>
+        </form>
+    </div>
+    
+</div>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
