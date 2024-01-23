@@ -1,0 +1,126 @@
+.navbar {
+    background-color: #AC9C80;
+    font-size: 1.5em;
+    border-bottom: 1px black solid;
+}
+
+.nav-link {
+    margin-right: 25px;
+}
+
+.nav-link:hover {
+    border-bottom: 1px solid white;
+}
+
+span {
+    color: black;
+}
+
+.navbar h4 {
+    font-size: 2.5em;
+    color: white;
+    margin-left: 200px;
+}
+
+.btnAccount {
+    border-radius: 15px;
+    background-color: cornflowerblue;
+    padding: 10px;
+}
+
+.profile {
+    margin: auto;
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+
+.about {
+    width: 100%;
+    text-align: center;
+    padding-top: 250px;
+}
+
+.about h2 {
+    font-size: 4.5em;
+}
+.about h3 {
+    color:#AC9C80;
+    font-size: 2.25em;
+}
+
+.btncontact {
+    border-radius: 15px;
+    background-color: #AC9C80;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin-right: 25px;
+    margin-top: 50px;
+    font-size: 1.25em;
+}
+
+.btncontact:hover {
+    background-color: lightgray;
+    transition: 1s;
+    transform: scale(1.25);
+}
+
+.profile img {
+    border-radius: 375px;
+}
+
+#about {
+    background-color: #cac6be;
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+#education {
+    background-color: white;
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#education h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+#skills {
+    background-color: #AC9C80;
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#skills h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+ul li {
+    list-style: none;
+}
+
+@media screen and (max-width: 600px) {
+    .about {
+    width: 100%;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.profile img {
+    width: 300px;
+    height: 300px;
+}
+}
