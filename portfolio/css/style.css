@@ -1,25 +1,31 @@
+*
+{
+   font-family: "Roboto";
+}
+
 .navbar {
     background-color: #AC9C80;
-    font-size: 1.5em;
-    border-bottom: 1px black solid;
+    font-size: 1.1em;
+    display: inline-block;
 }
 
-.nav-link {
-    margin-right: 25px;
+.nav-item {
+    margin-left: 20px;
 }
 
-.nav-link:hover {
-    border-bottom: 1px solid white;
+.nav-item a:hover {
+    color: #443e32!important;
 }
+
 
 span {
     color: black;
 }
 
 .navbar h4 {
-    font-size: 2.5em;
+    font-size: 1.5em;
     color: white;
-    margin-left: 200px;
+    margin: 0px 20px;
 }
 
 .btnAccount {
@@ -28,45 +34,37 @@ span {
     padding: 10px;
 }
 
-.profile {
-    margin: auto;
-    padding-top: 100px;
-    margin-bottom: 100px;
+.profile img{
+    width: 100%;
+    height: auto;
 }
 
 .about {
-    width: 100%;
     text-align: center;
-    padding-top: 250px;
 }
 
 .about h2 {
-    font-size: 4.5em;
+    font-size: 4.2vw;
 }
 .about h3 {
     color:#AC9C80;
-    font-size: 2.25em;
+    text-transform: uppercase;
+    font-size: 3vw;
 }
 
 .btncontact {
-    border-radius: 15px;
     background-color: #AC9C80;
     border: none;
     color: white;
-    padding: 10px;
-    margin-right: 25px;
-    margin-top: 50px;
-    font-size: 1.25em;
+    padding: 8px 16px;
+    font-size: 1em;
+    margin-top: 20px;
 }
 
 .btncontact:hover {
-    background-color: lightgray;
-    transition: 1s;
-    transform: scale(1.25);
-}
-
-.profile img {
-    border-radius: 375px;
+    background-color: #443e32;
+    transition: .5s;
+    transform: scale(1);
 }
 
 #about {
@@ -113,14 +111,5 @@ ul li {
 }
 
 @media screen and (max-width: 600px) {
-    .about {
-    width: 100%;
-    text-align: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-.profile img {
-    width: 300px;
-    height: 300px;
-}
+
 }
