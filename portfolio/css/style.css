@@ -3,113 +3,81 @@
    font-family: "Roboto";
 }
 
-.navbar {
-    background-color: #AC9C80;
-    font-size: 1.1em;
-    display: inline-block;
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 16px;
 }
 
-.nav-item {
-    margin-left: 20px;
-}
-
-.nav-item a:hover {
-    color: #443e32!important;
-}
-
-
-span {
-    color: black;
-}
-
-.navbar h4 {
-    font-size: 1.5em;
-    color: white;
-    margin: 0px 20px;
-}
-
-.btnAccount {
-    border-radius: 15px;
-    background-color: cornflowerblue;
-    padding: 10px;
-}
-
-.profile img{
-    width: 100%;
-    height: auto;
-}
-
-.about {
-    text-align: center;
-}
-
-.about h2 {
-    font-size: 4.2vw;
-}
-.about h3 {
-    color:#AC9C80;
-    text-transform: uppercase;
-    font-size: 3vw;
-}
-
-.btncontact {
-    background-color: #AC9C80;
-    border: none;
-    color: white;
-    padding: 8px 16px;
-    font-size: 1em;
-    margin-top: 20px;
-}
-
-.btncontact:hover {
-    background-color: #443e32;
-    transition: .5s;
-    transform: scale(1);
-}
-
-#about {
-    background-color: #cac6be;
-    text-align: center;
-    font-size: 1.5em;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-#about h2 {
-    font-size: 2.5em;
-    margin-bottom: 50px;
-}
-
-#education {
-    background-color: white;
-    text-align: center;
-    font-size: 1.5em;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-#education h2 {
-    font-size: 2.5em;
-    margin-bottom: 50px;
-}
-
-#skills {
-    background-color: #AC9C80;
-    text-align: center;
-    font-size: 1.5em;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-#skills h2 {
-    font-size: 2.5em;
-    margin-bottom: 50px;
+.navbar .navbar-nav .nav-link:hover {
+    color: #7f97a5;
 }
 
 ul li {
     list-style: none;
 }
 
-@media screen and (max-width: 600px) {
+.main {
+    color: white;
+    padding: 200px 50px; 
+    background-color: #04324e; 
+    background-image: url("../img/logo.svg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover, center;
+    position: relative;
+    text-align: center;
+}
 
+.main h2 {
+    font-size: 48px;
+}
+
+.main h3 {
+    font-size: 20px;
+}
+
+#about, #projects {
+    margin: 100px 50px;
+}
+
+#about h2, #projects h2 {
+    font-size: 28px;
+}
+
+.btn-primary {
+    background-color: #04324e !important;
+    color: white !important;
+    border: none !important;
+    font-size: 12px !important;
+}
+
+.btn-primary:hover {
+    background-color: #011825 !important;
+}
+
+.btn-outline-primary {
+    border-color: #04324e !important;
+    color: #04324e !important;
+    font-size: 14px !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: #04324e !important;
+    color: white !important;
+}
+
+
+.card-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card-text {
+font-size: 14px;
+}
+
+ @media screen and (min-width: 992px) {
+    .navbar .navbar-nav .nav-link {
+      padding: 0 0.5em;
+    }
 }
