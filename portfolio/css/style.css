@@ -32,9 +32,21 @@ ul li {
     font-size: 48px;
 }
 
-.main h3 {
-    font-size: 20px;
+.main p {
+    font-size: 16px;
 }
+
+.main h3 {
+    font-size: 24px;
+}
+
+.sub-headers {
+    color: white;
+    padding: 100px 50px; 
+    background-color: #04324e; 
+    text-align: center;
+}
+
 
 #about, #projects {
     margin: 100px 50px;
@@ -80,4 +92,16 @@ font-size: 14px;
     .navbar .navbar-nav .nav-link {
       padding: 0 0.5em;
     }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+.gallery img {
+  width: auto;
+  height: 200px;
+  display: inline-flex;
 }
